@@ -13,6 +13,7 @@
         "maxEOF": 1
       }
     ],
+    "multiline-ternary": "off",
     "no-undef": "off",
     "indent": [ "error", 4 ],
     "comma-dangle": "off",
