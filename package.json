@@ -1,4 +1,6 @@
 {
+  "name": "@ssc-hermes/blob-store",
+  "description": "Blob storage",
   "type": "module",
   "version": "0.0.0",
   "main": "dist/index.js",
@@ -11,6 +13,8 @@
     "preversion": "npm run lint",
     "postversion": "git push && git push --tags && npm publish",
     "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
   },
   "devDependencies": {
     "@typescript-eslint/parser": "^5.55.0",
@@ -37,9 +41,20 @@
     }
   },
   "keywords": [
-    "template",
-    "typescript"
+    "blob",
+    "store"
   ],
   "author": "nichoth <nichoth@gmail.com> (https://nichoth.com)",
-  "license": "AGPL-3.0-or-later"
+  "license": "AGPL-3.0-or-later",
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssc-hermes/blob-store.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ssc-hermes/blob-store/issues"
+  },
+  "homepage": "https://github.com/ssc-hermes/blob-store#readme"
 }
