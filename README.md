@@ -20,7 +20,17 @@ const store = BlobStore.Cloudinary({
 })
 ```
 
+
+
+### get a URL
 ```ts
-// must have 
-const store = BlobStore.Cloudinary()
+test('read the file we just wrote', async t => {
+    const url = (store.cld
+        .image(hash)
+        .resize(scale().width(100))
+        .toURL())
+
+    t.ok(url.includes('https'), 'should return an https URL')
+    t.ok(url.includes(hash), 'url should include the right filename')
+})
 ```

@@ -1,5 +1,6 @@
 import { test } from 'tapzero'
 import { BlobStore } from '@ssc-hermes/blob-store'
+import { read } from '@ssc-hermes/blob-store/read'
 import { scale } from '@cloudinary/url-gen/actions/resize'
 import * as dotenv from 'dotenv'
 dotenv.config()
@@ -36,7 +37,8 @@ test('write a file to cloudinary', async t => {
 })
 
 test('read the file we just wrote', async t => {
-    const url = (store.cld
+    const cld = read({ cloudName: 'nichoth' })
+    const url = (cld
         .image(hash)
         .resize(scale().width(100))
         .toURL())
