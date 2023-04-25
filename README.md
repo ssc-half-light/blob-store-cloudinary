@@ -2,6 +2,8 @@
 
 Blob storage
 
+Use this for storage of *public* blobs -- anything publicly visible.
+
 ## install
 
 ```bash
