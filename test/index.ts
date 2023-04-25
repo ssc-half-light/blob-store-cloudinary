@@ -1,5 +1,6 @@
 import { test } from 'tapzero'
 import { BlobStore } from '@ssc-hermes/blob-store'
+// @ts-ignore
 import { read } from '@ssc-hermes/blob-store/read'
 import { scale } from '@cloudinary/url-gen/actions/resize'
 import * as dotenv from 'dotenv'
