@@ -41,6 +41,7 @@ test('write a file to cloudinary', async t => {
 ### get a URL
 ```ts
 import { read } from '@ssc-hermes/blob-store/read'
+import { scale } from '@cloudinary/url-gen/actions/resize'
 
 test('read the file we just wrote', async t => {
     const cld = read({ cloudName: 'nichoth' })
