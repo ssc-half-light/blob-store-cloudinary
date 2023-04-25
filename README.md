@@ -13,7 +13,7 @@ npm i -S @ssc-hermes/blob-store
 ## examples
 
 ### create
-```ts
+```js
 import { BlobStore } from '@ssc-hermes/blob-store'
 
 // pass in params for `cloudinary`
@@ -22,7 +22,9 @@ const store = BlobStore.Cloudinary({
     apiKey: process.env.CLOUDINARY_API_KEY as string,
     apiSecret: process.env.CLOUDINARY_API_SECRET as string
 })
+```
 
+```js
 // or use env variables as config
 const store = BlobStore.Cloudinary()  // needs `process.env.COUDINARY_*` vars
 ```
