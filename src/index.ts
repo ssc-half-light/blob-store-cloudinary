@@ -1,6 +1,7 @@
 import { webcrypto } from 'one-webcrypto'
 import { toString } from 'uint8arrays/to-string'
 import _cloudinary, { UploadApiResponse } from 'cloudinary'
+import { Cloudinary } from '@cloudinary/url-gen'
 const cloudinary = _cloudinary.v2
 
 interface cloudinaryParams {
@@ -17,6 +18,7 @@ interface WriteResponse {
 
 export class BlobStore {
     cloudinary
+    cld
 
     static Cloudinary (params?:cloudinaryParams) {
         const config = (params ? ({
@@ -36,6 +38,10 @@ export class BlobStore {
     constructor (config:{cloud_name:string, api_key:string, api_secret:string}) {
         cloudinary.config(config)
         this.cloudinary = cloudinary
+        this.cld = new Cloudinary({
+            cloud: { cloudName: config.cloud_name },
+            url: { secure: true }
+        })
     }
 
     /**

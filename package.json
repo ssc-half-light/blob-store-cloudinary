@@ -15,6 +15,7 @@
     "prepublishOnly": "npm run build"
   },
   "dependencies": {
+    "@cloudinary/url-gen": "^1.10.0",
     "cloudinary": "^1.36.2",
     "one-webcrypto": "^1.0.3",
     "uint8arrays": "^4.0.3"
