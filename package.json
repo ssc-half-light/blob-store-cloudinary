@@ -37,12 +37,10 @@
     },
     "./*": {
       "import": [
-        "./dist/*.js",
-        "./dist/*"
+        "./dist/*.js"
       ],
       "require": [
-        "./dist/*.cjs",
-        "./dist/*"
+        "./dist/*.cjs"
       ]
     }
   },
