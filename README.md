@@ -1,8 +1,8 @@
-# blob store ![tests](https://github.com/ssc-hermes/blob-store-cloudinary/actions/workflows/nodejs.yml/badge.svg)
+# blob store cloudinary ![tests](https://github.com/ssc-hermes/blob-store-cloudinary/actions/workflows/nodejs.yml/badge.svg)
 
 Blob storage
 
-Use this for storage of *public* blobs -- anything publicly visible.
+Use this for storage of *public* blobs in [cloudinary](https://cloudinary.com/).
 
 ## install
 
@@ -61,4 +61,3 @@ test('read the file we just wrote', async t => {
     t.ok(url.includes(hash), 'url should include the filename')
 })
 ```
-
