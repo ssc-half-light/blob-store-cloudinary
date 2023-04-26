@@ -1,4 +1,4 @@
-# blob store ![tests](https://github.com/ssc-hermes/blob-store/actions/workflows/nodejs.yml/badge.svg)
+# blob store ![tests](https://github.com/ssc-hermes/blob-store-cloudinary/actions/workflows/nodejs.yml/badge.svg)
 
 Blob storage
 
